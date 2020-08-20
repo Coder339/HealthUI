@@ -20,7 +20,7 @@ export default function Otp({navigation}){
     const [num1,setnum1] = useState('')
     const [num2,setnum2] = useState('')
     const [num3,setnum3] = useState('')
-    const [num4,setnum4] = useState(true)
+    const [num4,setnum4] = useState('')
     
     const num1Handler = (text) => {
         setnum1(text)
@@ -49,7 +49,6 @@ export default function Otp({navigation}){
                         <Text style={{fontSize:20,color:Colors.color_blue}}>Verify your number with {"\n"}     codes sent to you</Text>
                     </View>
                 </View>
-                
                 <View style={{flex:1,
                               flexDirection:'row',
                               alignItems:'center',
@@ -160,3 +159,6 @@ const styles=StyleSheet.create({
         justifyContent:'center'
     }
 })
+
+
+
