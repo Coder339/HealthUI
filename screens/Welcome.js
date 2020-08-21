@@ -16,8 +16,23 @@ export default function Welcome({navigation}) {
     return (
         <View style={{flex:1,alignItems:'center',backgroundColor: "#fff"}}>
             
-            
-            <View style={{flex:1,marginTop:100}}>
+            <View style={{position:'absolute',top:40}}>
+                <Text style={{
+                      marginLeft:70,
+                      fontSize:50,
+                      color:'#56C596'}}>++
+                </Text>
+                <Text style={{
+                      marginLeft:20,
+                      fontSize:25,
+                      color:Colors.color_blue}}>This is Health UI {'\n'}     Welcome!
+                </Text>
+                <Text style={{
+                      marginLeft:20,
+                      color:Colors.light_green}}>A health vertical UI kit made {'\n'}         with love for you
+                </Text>
+            </View>
+            <View style={{flex:1,marginTop:150}}>
                 <DoctorSvg/>
             </View>
             <View 
@@ -26,7 +41,7 @@ export default function Welcome({navigation}) {
                         marginTop:200}}
                 >
                 <GradientButton
-                    style={{ }}
+                    style={{}}
                     text='GET STARTED'
                     textStyle={{ fontSize: 20 }}
                     gradientBegin="#7BE495"
@@ -42,7 +57,7 @@ export default function Welcome({navigation}) {
             <View style={{
                       flex:1,
                       position:'absolute',
-                      bottom:60,
+                      bottom:50,
                       flexDirection:'row',
                       alignItems:'center'}}>
                 <Text>Already have an Account?/</Text>
